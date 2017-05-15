@@ -3,13 +3,6 @@ import classnames from 'classnames';
 import styles from './FriendListItem.css';
 
 export default class FriendListItem extends Component {
-  static propTypes = {
-    id: PropTypes.number.isRequired,
-    name: PropTypes.string.isRequired,
-    starred: PropTypes.boolean,
-    starFriend: PropTypes.func.isRequired,
-    onTrashClick: PropTypes.func.isRequired
-  }
 
   render () {
     return (
@@ -30,4 +23,12 @@ export default class FriendListItem extends Component {
     );
   }
 
+}
+
+FriendListItem.propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  starred: PropTypes.boolean,
+  starFriend: PropTypes.func.isRequired,
+  onTrashClick: PropTypes.func.isRequired
 }
