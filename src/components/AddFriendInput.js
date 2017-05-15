@@ -3,10 +3,6 @@ import classnames from 'classnames';
 import styles from './AddFriendInput.css';
 
 export default class AddFriendInput extends Component {
-  static propTypes = {
-    addFriend: PropTypes.func.isRequired
-  }
-
   render () {
     return (
       <input
@@ -39,4 +35,7 @@ export default class AddFriendInput extends Component {
     }
   }
 
+}
+AddFriendInput.propTypes = {
+  addFriend: PropTypes.func.isRequired
 }
